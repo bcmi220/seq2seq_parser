@@ -5,7 +5,7 @@ This is a Seq2seq model implemented based on [OpenNMT-py](http://opennmt.net/Ope
 Enjoying the advantage of seq2seq modeling, we enrich a series of embedding enhancement, including firstly introduced subword and node2vec augmentation. Meanwhile, we propose a beam search decoder with tree constraint and subroot decomposition over the sequence to furthermore enhance our seq2seq parser.
 
 The framework of the proposed seq2seq model:
-<center style="padding: 40px"><img width="70%" src="http://gitlab.leisure-x.com/lzc/COLING2018-Code-Seq2seq4dp/raw/dev/screenshots/seq2seq_model.png" /></center>
+<center style="padding: 40px"><img width="70%" src="https://raw.githubusercontent.com/bcmi220/seq2seq_parser/master/screenshots/seq2seq_model.png" /></center>
  
 ## Requirements
 
