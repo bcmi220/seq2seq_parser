@@ -62,6 +62,15 @@ python tools/embeddings_to_torch.py -emb_file_enc data/pretrain/glove.6B.100d.tx
 python train.py -save_model data/model/dp/dp -batch_size 64 -enc_layers 4 -dec_layers 2 -rnn_size 800 -word_vec_size 100 -feat_vec_size 100 -pre_word_vecs_enc data/temp/dp/en_embeddings.enc.pt -data data/temp/dp/dp -encoder_type brnn -gpuid 0 -position_encoding -bridge -global_attention mlp -optim adam -learning_rate 0.001 -tensorboard -tensorboard_log_dir logs -elmo -elmo_size 500 -elmo_options data/pretrain/elmo_2x4096_512_2048cnn_2xhighway_options.json -elmo_weight data/pretrain/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5 -subword_elmo -subword_elmo_size 500 -subword_elmo_options data/pretrain/subword_elmo_options.json -subword_weight data/pretrain/en.wiki.bpe.op10000.d50.w2v.txt -subword_spm_model data/pretrain/en.wiki.bpe.op10000.model
 ```
 
+elmo_2x4096_512_2048cnn_2xhighway_options.json
+elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5
+subword_elmo_options.json
+en.wiki.bpe.op10000.d50.w2v.txt
+en.wiki.bpe.op10000.model
+
+These files, you can download from [here](https://drive.google.com/drive/folders/1ug6ab14fpM22ed_vomOTjjUB8Awh66VM?usp=sharing).
+
+
 ### Step 3: Translate
 
 ```bash
